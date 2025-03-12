@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,8 +48,11 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold text-brand-darkGray">
-          arify<span className="text-brand-blue">.net</span>
+        <a href="#" className="flex items-center space-x-2">
+          <Logo size="small" />
+          <span className="text-2xl font-bold text-brand-darkGray">
+            arify<span className="text-brand-blue">.net</span>
+          </span>
         </a>
 
         {/* Desktop Navigation */}

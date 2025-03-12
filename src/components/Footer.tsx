@@ -1,18 +1,22 @@
 
 import React from "react";
+import Logo from "./Logo";
 
 const Footer: React.FC = () => {
   return (
     <footer className="py-10 px-6 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <a href="#" className="text-xl font-bold text-brand-darkGray">
-              arify<span className="text-brand-blue">.net</span>
-            </a>
-            <p className="text-sm text-brand-gray mt-2">
-              Making scleral lens insertion safer and easier.
-            </p>
+          <div className="mb-4 md:mb-0 flex items-center">
+            <Logo size="small" className="mr-2" />
+            <div>
+              <a href="#" className="text-xl font-bold text-brand-darkGray">
+                arify<span className="text-brand-blue">.net</span>
+              </a>
+              <p className="text-sm text-brand-gray mt-2">
+                Making scleral lens insertion safer and easier.
+              </p>
+            </div>
           </div>
           
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">

@@ -3,6 +3,7 @@ import React from "react";
 import { ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
+import Logo from "./Logo";
 
 const Hero: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -64,17 +65,8 @@ const Hero: React.FC = () => {
             animation="blur-in"
             delay="delay-200"
           >
-            {/* Placeholder for product image */}
-            <div className="glass-card p-2 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden">
-              <div className="w-full h-full bg-brand-blue/10 rounded-2xl flex items-center justify-center">
-                <div className="w-2/3 h-2/3 relative animate-floating">
-                  {/* This would be your product image */}
-                  <div className="absolute inset-0 bg-brand-blue/20 rounded-full blur-xl"></div>
-                  <div className="absolute inset-4 bg-white rounded-full"></div>
-                  <div className="absolute inset-8 bg-brand-lightBlue/30 rounded-full"></div>
-                  <div className="absolute inset-[4rem] bg-brand-blue/70 rounded-full"></div>
-                </div>
-              </div>
+            <div className="glass-card p-2 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center">
+              <Logo size="large" className="w-40 h-40 md:w-60 md:h-60 animate-floating" />
             </div>
           </AnimatedSection>
         </div>
