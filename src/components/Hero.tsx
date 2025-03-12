@@ -41,6 +41,14 @@ const Hero: React.FC = () => {
             </AnimatedSection>
 
             <AnimatedSection delay="delay-300">
+              <div className="flex flex-wrap gap-3 mb-6">
+                <div className="bg-brand-blue/10 text-brand-blue text-sm font-medium px-3 py-1 rounded-full">FDA Class 1</div>
+                <div className="bg-brand-blue/10 text-brand-blue text-sm font-medium px-3 py-1 rounded-full">Clinical Trial in Progress</div>
+                <div className="bg-brand-blue/10 text-brand-blue text-sm font-medium px-3 py-1 rounded-full">AI/ML-Powered Analysis</div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay="delay-400">
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Button
                   onClick={() => scrollToSection("contact")}
