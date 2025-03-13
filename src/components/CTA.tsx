@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
-import { MobileIcon, TabletSmartphone } from "lucide-react";
 
 const CTA: React.FC = () => {
   return (
@@ -40,71 +39,6 @@ const CTA: React.FC = () => {
                   Privacy Policy
                 </a>
               </p>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection delay="delay-200" className="mt-12">
-          <div className="glass-card p-8 bg-white/70">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <TabletSmartphone className="h-16 w-16 text-brand-blue mb-4" />
-                <h3 className="text-2xl font-medium mb-3">Mobile Arify App</h3>
-                <p className="text-brand-gray mb-4">
-                  Take your scleral lens experience to the next level with our mobile app. 
-                  Get personalized guidance, track your lens usage, and receive alerts for lens replacement.
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
-                    <span>Real-time lens insertion guidance</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
-                    <span>Personalized wear schedule</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
-                    <span>Smart notifications</span>
-                  </li>
-                </ul>
-                <div className="flex gap-4">
-                  <Button className="bg-black text-white hover:bg-black/80">
-                    <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M17.5640855,0 L6.43591449,0 C5.0917042,0 4,1.0917042 4,2.43591449 L4,21.5640855 C4,22.9082958 5.0917042,24 6.43591449,24 L17.5640855,24 C18.9082958,24 20,22.9082958 20,21.5640855 L20,2.43591449 C20,1.0917042 18.9082958,0 17.5640855,0 Z M12,23 C11.1715729,23 10.5,22.3284271 10.5,21.5 C10.5,20.6715729 11.1715729,20 12,20 C12.8284271,20 13.5,20.6715729 13.5,21.5 C13.5,22.3284271 12.8284271,23 12,23 Z M17,17.5 C17,17.7761424 16.7761424,18 16.5,18 L7.5,18 C7.22385763,18 7,17.7761424 7,17.5 L7,2.5 C7,2.22385763 7.22385763,2 7.5,2 L16.5,2 C16.7761424,2 17,2.22385763 17,2.5 L17,17.5 Z" />
-                    </svg>
-                    App Store
-                  </Button>
-                  <Button className="bg-black text-white hover:bg-black/80">
-                    <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3.92287093,2.08424021 L13.8864153,12.047785 L3.92287093,21.9157598 C3.80936197,21.7707692 3.75,21.5990261 3.75,21.4230769 L3.75,2.57692308 C3.75,2.40097388 3.80936197,2.22923077 3.92287093,2.08424021 Z M15.0023228,13.1636921 L20.2681368,8.84615385 L16.5,6.69856835 L15.0023228,13.1636921 Z M15.0023228,10.9318779 L16.5,17.3014317 L20.2681368,15.1538462 L15.0023228,10.9318779 Z M13.8864153,13.956989 L5.97212935,21.8713748 L15.0728636,21.8713748 C15.2488128,21.8713748 15.4205559,21.8120128 15.5655465,21.6985038 L17.7131379,16.1865239 L13.8864153,13.956989 Z M5.97212935,2.12862524 L13.8864153,10.043011 L17.7131379,7.81347613 L15.5655465,2.3014962 C15.4205559,2.18798724 15.2488128,2.12862524 15.0728636,2.12862524 L5.97212935,2.12862524 Z" />
-                    </svg>
-                    Google Play
-                  </Button>
-                </div>
-              </div>
-              
-              <div className="md:w-1/2 flex justify-center">
-                <div className="relative w-64">
-                  <div className="absolute inset-0 bg-gradient-to-r from-brand-blue to-blue-400 rounded-[40px] blur-lg opacity-20"></div>
-                  <div className="relative bg-black rounded-[40px] border-[8px] border-gray-800 overflow-hidden shadow-xl">
-                    <div className="pt-6 px-2">
-                      <div className="w-20 h-4 mx-auto rounded-full bg-black border-[1px] border-gray-700 mb-2"></div>
-                      <div className="aspect-[9/19] rounded-lg overflow-hidden">
-                        <div className="w-full h-full bg-gradient-to-br from-brand-blue/10 to-blue-100/30 flex items-center justify-center">
-                          <div className="text-center p-4">
-                            <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-brand-blue/20 flex items-center justify-center">
-                              <MobileIcon className="w-6 h-6 text-brand-blue" />
-                            </div>
-                            <p className="text-xs text-brand-gray">Arify Mobile App</p>
-                            <p className="text-[10px] text-brand-gray/70">FDA Class 1 • AI/ML-Powered</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </AnimatedSection>

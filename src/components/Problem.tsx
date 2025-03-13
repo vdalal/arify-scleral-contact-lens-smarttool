@@ -52,42 +52,38 @@ const Problem: React.FC = () => {
 
         <AnimatedSection delay="delay-400" className="mt-12">
           <div className="glass-card p-6 md:p-10 bg-gradient-to-br from-white/80 to-white/60">
-            <h3 className="mb-4">Pain Points, Needs & Wants</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <ul className="text-brand-gray space-y-3 pl-5 list-disc">
-                  <li><span className="font-medium text-brand-blue">Safety:</span> Proper insertion, pre-check for liquid, pre-check for dirt/debris</li>
-                  <li><span className="font-medium text-brand-blue">Bacterial infections:</span> Keratoconus, keratitis with improper lens insertion (e.g., with finger)</li>
-                  <li><span className="font-medium text-brand-blue">Time-consuming:</span> Current methods require significant time and patience</li>
-                  <li><span className="font-medium text-brand-blue">Inefficient:</span> Need to check for dirt/debris and re-insert; 'plunger' inconvenient for on-the-go use</li>
+            <h3 className="mb-4">The Current User Journey</h3>
+            <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6">
+              <div className="flex-1">
+                <div className="p-3 bg-brand-blue/10 rounded-lg mb-3 font-medium">
+                  Fit Phase
+                </div>
+                <ul className="text-brand-gray space-y-2 pl-5 list-disc">
+                  <li>Doctor prescription</li>
+                  <li>Clinic visit for scans</li>
+                  <li>Receive and try lenses</li>
+                  <li>Possible wait for new pair</li>
                 </ul>
-                
-                <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded">
-                  <p className="font-medium">High drop-offs for new users</p>
-                  <p className="text-red-600 font-bold text-xl">27% drop-off rate in the first year</p>
-                  <p className="text-sm mt-2">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/31734087/" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">https://pubmed.ncbi.nlm.nih.gov/31734087/</a></p>
-                </div>
               </div>
-              
-              <div>
-                <h4 className="font-medium mb-3">Current Alternative: Inappropriately named 'plunger'</h4>
-                <p className="mb-4 text-brand-gray">Low-tech: Risky, error-prone & time-consuming.</p>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="rounded-lg overflow-hidden shadow-md">
-                    <img 
-                      src="/lovable-uploads/85eaedef-2b96-4590-af75-6ff6d1c7c68a.png" 
-                      alt="Current plunger insertion method" 
-                      className="w-full h-auto"
-                    />
-                  </div>
-                  <div className="rounded-lg overflow-hidden shadow-md bg-gray-50 flex items-center justify-center p-4">
-                    <div className="text-center">
-                      <p className="text-red-500 font-medium">Error-prone</p>
-                      <p className="text-sm text-brand-gray">Manual insertion increases risk of contamination</p>
-                    </div>
-                  </div>
+              <div className="flex-1">
+                <div className="p-3 bg-brand-blue/10 rounded-lg mb-3 font-medium">
+                  Prep Phase
                 </div>
+                <ul className="text-brand-gray space-y-2 pl-5 list-disc">
+                  <li>Ensure liquid on lens</li>
+                  <li>Check for dirt/debris on lens</li>
+                  <li>Check for dirt/debris in eye</li>
+                </ul>
+              </div>
+              <div className="flex-1">
+                <div className="p-3 bg-brand-blue/10 rounded-lg mb-3 font-medium">
+                  Insert/Post-Insert Phase
+                </div>
+                <ul className="text-brand-gray space-y-2 pl-5 list-disc">
+                  <li>Check placement</li>
+                  <li>Wiggle eye to check for debris</li>
+                  <li>Often requires re-insertion</li>
+                </ul>
               </div>
             </div>
           </div>
