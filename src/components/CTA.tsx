@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
+import { Smartphone, Download } from "lucide-react";
 
 const CTA: React.FC = () => {
   return (
@@ -38,6 +39,41 @@ const CTA: React.FC = () => {
                 <a href="#" className="text-brand-blue underline">
                   Privacy Policy
                 </a>
+              </p>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection delay="delay-200" className="mt-12">
+          <div className="glass-card p-8 md:p-12 bg-white/70">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
+                <Smartphone className="text-brand-blue" />
+                Get the Arify Mobile App
+              </h3>
+              <p className="text-brand-gray mb-6">
+                Take your scleral lens experience to the next level with our companion mobile app. 
+                Track your insertions, get personalized tips, and connect with our community.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
+                <a 
+                  href="https://play.google.com/store/apps/details?id=app.lovable.arify" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-full hover:bg-brand-blue/90 transition-all"
+                >
+                  <Download size={20} />
+                  Download for Android
+                </a>
+                <Button variant="outline" disabled className="opacity-70">
+                  <Download size={20} />
+                  iOS Coming Soon
+                </Button>
+              </div>
+              
+              <p className="text-sm text-brand-gray">
+                Our iOS app is currently under review with the Apple App Store and will be available soon.
               </p>
             </div>
           </div>
