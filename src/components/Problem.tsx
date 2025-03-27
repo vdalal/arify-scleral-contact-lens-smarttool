@@ -56,33 +56,33 @@ const Problem: React.FC = () => {
             <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6">
               <div className="flex-1">
                 <div className="p-3 bg-brand-blue/10 rounded-lg mb-3 font-medium">
-                  Fit Phase
+                  Pre-Insertion phase
                 </div>
                 <ul className="text-brand-gray space-y-2 pl-5 list-disc">
-                  <li>Doctor prescription</li>
-                  <li>Clinic visit for scans</li>
-                  <li>Receive and try lenses</li>
-                  <li>Possible wait for new pair</li>
+                  <li>Find a mirror or magnifier</li>
+                  <li>Wash and disinfect both hands</li>
                 </ul>
               </div>
               <div className="flex-1">
                 <div className="p-3 bg-brand-blue/10 rounded-lg mb-3 font-medium">
-                  Prep Phase
+                  Prep & Insert phase
                 </div>
                 <ul className="text-brand-gray space-y-2 pl-5 list-disc">
-                  <li>Ensure liquid on lens</li>
+                  <li>Ensure lens immersed in solution</li>
+                  <li>Check for dirt/debris on fingers</li>
                   <li>Check for dirt/debris on lens</li>
                   <li>Check for dirt/debris in eye</li>
+                  <li>Insert lens</li>
                 </ul>
               </div>
               <div className="flex-1">
                 <div className="p-3 bg-brand-blue/10 rounded-lg mb-3 font-medium">
-                  Insert/Post-Insert Phase
+                  Post-Insertion phase
                 </div>
                 <ul className="text-brand-gray space-y-2 pl-5 list-disc">
-                  <li>Check placement</li>
-                  <li>Wiggle eye to check for debris</li>
-                  <li>Often requires re-insertion</li>
+                  <li>Check lens placement</li>
+                  <li>Pan eye left/right or up/down to check for placement and/or dirt/debris</li>
+                  <li>Re-insert (as appropriate)</li>
                 </ul>
               </div>
             </div>
