@@ -92,9 +92,9 @@ const CTA: React.FC = () => {
             <div>
               <h3 className="text-xl font-medium mb-2">Visit Us</h3>
               <p className="text-brand-gray">
-                123 Innovation Drive
-                <br />
-                San Francisco, CA 94107
+                <a href="https://www.arify.net" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:underline">
+                  www.arify.net
+                </a>
               </p>
             </div>
             <div>
