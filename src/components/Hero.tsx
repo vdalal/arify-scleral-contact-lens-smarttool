@@ -3,7 +3,6 @@ import React from "react";
 import { ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
-import Logo from "./Logo";
 
 const Hero: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -67,14 +66,18 @@ const Hero: React.FC = () => {
             </AnimatedSection>
           </div>
 
-          {/* Hero image or illustration */}
+          {/* Hero image - replaced with device image */}
           <AnimatedSection
             className="w-full lg:w-1/2 relative"
             animation="blur-in"
             delay="delay-200"
           >
-            <div className="glass-card p-2 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center">
-              <Logo size="large" className="w-40 h-40 md:w-60 md:h-60 animate-floating" />
+            <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/e8aff4e3-cc78-4d8f-a397-681e5888b589.png" 
+                alt="Arify Scleral Lens Insertion Device" 
+                className="w-full max-w-sm mx-auto animate-floating"
+              />
             </div>
           </AnimatedSection>
         </div>
