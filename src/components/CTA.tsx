@@ -27,7 +27,7 @@ const CTA: React.FC = () => {
                   placeholder="Enter your email"
                   className="px-6 py-3 rounded-full border border-brand-blue/30 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 min-w-[250px]"
                 />
-                <Button className="btn-primary">Request Demo</Button>
+                <Button className="btn-primary">Stay in touch</Button>
               </div>
 
               <p className="text-sm text-brand-gray">
