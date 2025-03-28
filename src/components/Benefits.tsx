@@ -79,7 +79,7 @@ const Benefits: React.FC = () => {
               <div className="w-full md:w-2/3">
                 <h3 className="mb-4">Transforming the User Experience</h3>
                 <p className="text-brand-gray mb-6">
-                  Our users report a 95% reduction in insertion-related discomfort and a 
+                  Our users report a huge reduction in insertion-related discomfort and a 
                   substantial increase in confidence when using scleral lenses.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
