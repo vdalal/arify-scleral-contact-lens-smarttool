@@ -92,8 +92,8 @@ const Benefits: React.FC = () => {
                     <div className="text-sm text-brand-gray">Reduction in insertion time</div>
                   </div>
                   <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-blue mb-2">85%</div>
-                    <div className="text-sm text-brand-gray">Fewer insertion attempts</div>
+                    <div className="text-3xl font-bold text-brand-blue mb-2">Vastly</div>
+                    <div className="text-sm text-brand-gray">Fewer reinsertion attempts</div>
                   </div>
                 </div>
               </div>
