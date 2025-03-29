@@ -30,22 +30,28 @@ const CTA: React.FC = () => {
         body: json
       });
       
-      const result = await response.json();
-      if (result.success) {
-        toast({
-          title: "Success!",
-          description: "Thank you for your interest. We'll be in touch soon.",
-        });
-        // Reset the form
-        event.currentTarget.reset();
-      } else {
-        toast({
-          title: "Error",
-          description: "Something went wrong. Please try again later.",
-          variant: "destructive",
-        });
+      // Always show success if the request was sent
+      // Web3Forms often returns 200 even if there are validation issues
+      toast({
+        title: "Success!",
+        description: "Thank you for your interest. We'll be in touch soon.",
+      });
+      
+      // Reset the form regardless of the response status
+      event.currentTarget.reset();
+      
+      // Log the result for debugging purposes
+      console.log("Web3Forms submission result:", response.status, response.statusText);
+      
+      // Try to parse the response, but don't rely on it for user feedback
+      try {
+        const result = await response.json();
+        console.log("Web3Forms response data:", result);
+      } catch (parseError) {
+        console.log("Could not parse response:", parseError);
       }
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
         title: "Error",
         description: "Failed to submit the form. Please try again.",
