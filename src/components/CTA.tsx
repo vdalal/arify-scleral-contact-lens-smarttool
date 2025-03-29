@@ -1,10 +1,61 @@
-import React from "react";
+
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
-import { Smartphone, Download, User, Mail } from "lucide-react";
+import { Smartphone, Download, User, Mail, CheckCircle } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { useToast } from "@/hooks/use-toast";
 
 const CTA: React.FC = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(event.currentTarget);
+    formData.append("access_key", "c8e9b2ef-6207-46de-b889-9b63321fbc39");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      });
+      
+      const result = await response.json();
+      if (result.success) {
+        toast({
+          title: "Success!",
+          description: "Thank you for your interest. We'll be in touch soon.",
+        });
+        // Reset the form
+        event.currentTarget.reset();
+      } else {
+        toast({
+          title: "Error",
+          description: "Something went wrong. Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to submit the form. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section id="contact" className="section bg-brand-blue/5">
       <div className="max-w-5xl mx-auto">
@@ -22,13 +73,9 @@ const CTA: React.FC = () => {
               </p>
 
               <form 
-                name="contact" 
-                method="POST" 
-                data-netlify="true"
+                onSubmit={handleSubmit}
                 className="flex flex-col max-w-md mx-auto gap-4 mb-8"
               >
-                <input type="hidden" name="form-name" value="contact" />
-                
                 <div className="flex items-center gap-2 rounded-full border border-brand-blue/30 px-4 py-2">
                   <User className="text-brand-blue/70 h-5 w-5" />
                   <Input 
@@ -51,7 +98,17 @@ const CTA: React.FC = () => {
                   />
                 </div>
                 
-                <Button type="submit" className="btn-primary mt-2">Learn More</Button>
+                <Button 
+                  type="submit" 
+                  className="btn-primary mt-2"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>Processing...</>
+                  ) : (
+                    <>Learn More</>
+                  )}
+                </Button>
               </form>
 
               <p className="text-sm text-brand-gray">
