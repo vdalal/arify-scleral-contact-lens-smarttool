@@ -1,7 +1,9 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
-import { Smartphone, Download } from "lucide-react";
+import { Smartphone, Download, User, Mail, ListChecks } from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 const CTA: React.FC = () => {
   return (
@@ -20,14 +22,52 @@ const CTA: React.FC = () => {
                 the difference.
               </p>
 
-              <div className="flex flex-col md:flex-row justify-center gap-4 mb-8">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="px-6 py-3 rounded-full border border-brand-blue/30 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 min-w-[250px]"
-                />
-                <Button className="btn-primary">Learn More</Button>
-              </div>
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true"
+                className="flex flex-col max-w-md mx-auto gap-4 mb-8"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                
+                <div className="flex items-center gap-2 rounded-full border border-brand-blue/30 px-4 py-2">
+                  <User className="text-brand-blue/70 h-5 w-5" />
+                  <Input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your Name" 
+                    required
+                    className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0"
+                  />
+                </div>
+                
+                <div className="flex items-center gap-2 rounded-full border border-brand-blue/30 px-4 py-2">
+                  <Mail className="text-brand-blue/70 h-5 w-5" />
+                  <Input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Your Email" 
+                    required
+                    className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 px-0"
+                  />
+                </div>
+                
+                <div className="flex items-center gap-2 rounded-full border border-brand-blue/30 px-4 py-2">
+                  <ListChecks className="text-brand-blue/70 h-5 w-5 shrink-0" />
+                  <select 
+                    name="type" 
+                    className="w-full bg-transparent focus:outline-none py-2"
+                    required
+                  >
+                    <option value="" disabled selected>Select Your Type</option>
+                    <option value="Scleral lens user">Scleral lens user</option>
+                    <option value="Plunger user">Plunger user</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                
+                <Button type="submit" className="btn-primary mt-2">Learn More</Button>
+              </form>
 
               <p className="text-sm text-brand-gray">
                 By submitting, you agree to our{" "}
