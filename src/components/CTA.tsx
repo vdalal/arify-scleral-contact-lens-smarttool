@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -186,8 +185,6 @@ const CTA: React.FC = () => {
               <h3 className="text-xl font-medium mb-2">Contact Us</h3>
               <p className="text-brand-gray">
                 support@arify.net
-                <br />
-                +1 (800) 555-0123
               </p>
             </div>
             <div>

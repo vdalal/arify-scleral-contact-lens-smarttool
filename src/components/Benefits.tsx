@@ -35,7 +35,7 @@ const Benefits: React.FC = () => {
           <AnimatedSection delay="delay-200">
             <FeatureCard
               title="Time Efficiency"
-              description="Save up to 70% of insertion time by eliminating the need for manual checks and re-insertions."
+              description="Save insertion time by eliminating the need for manual checks and reinsertions."
               icon={Clock}
             />
           </AnimatedSection>

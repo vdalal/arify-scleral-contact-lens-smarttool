@@ -1,4 +1,3 @@
-
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { AlertCircle, Clock, Trash2 } from "lucide-react";
@@ -82,7 +81,7 @@ const Problem: React.FC = () => {
                 <ul className="text-brand-gray space-y-2 pl-5 list-disc">
                   <li>Check lens placement</li>
                   <li>Pan eye left/right or up/down to check for placement and/or dirt/debris</li>
-                  <li>Re-insert (as appropriate)</li>
+                  <li>Reinsert (as appropriate)</li>
                 </ul>
               </div>
             </div>
