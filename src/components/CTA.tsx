@@ -30,25 +30,36 @@ const CTA: React.FC = () => {
         body: json
       });
       
-      // Always show success if the request was sent
-      // Web3Forms often returns 200 even if there are validation issues
-      toast({
-        title: "Success!",
-        description: "Thank you for your interest. We'll be in touch soon.",
-      });
-      
-      // Reset the form regardless of the response status
-      event.currentTarget.reset();
-      
-      // Log the result for debugging purposes
       console.log("Web3Forms submission result:", response.status, response.statusText);
       
-      // Try to parse the response, but don't rely on it for user feedback
+      // Try to parse the response
       try {
         const result = await response.json();
         console.log("Web3Forms response data:", result);
+        
+        // Always show success toast
+        toast({
+          title: "Success!",
+          description: "Thank you for your interest. We'll be in touch soon.",
+        });
+        
+        // Add a small delay before resetting the form
+        setTimeout(() => {
+          event.currentTarget.reset();
+        }, 500);
+        
       } catch (parseError) {
         console.log("Could not parse response:", parseError);
+        // Still show success if we couldn't parse the response but the request was sent
+        toast({
+          title: "Success!",
+          description: "Thank you for your interest. We'll be in touch soon.",
+        });
+        
+        // Add a small delay before resetting the form
+        setTimeout(() => {
+          event.currentTarget.reset();
+        }, 500);
       }
     } catch (error) {
       console.error("Form submission error:", error);
@@ -58,7 +69,10 @@ const CTA: React.FC = () => {
         variant: "destructive",
       });
     } finally {
-      setIsSubmitting(false);
+      // Add a small delay before changing submission state
+      setTimeout(() => {
+        setIsSubmitting(false);
+      }, 600); // Slightly longer delay than form reset
     }
   }
 
