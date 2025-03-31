@@ -5,7 +5,7 @@ import { LucideIcon } from "lucide-react";
 
 interface FeatureCardProps {
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: LucideIcon;
   className?: string;
 }
