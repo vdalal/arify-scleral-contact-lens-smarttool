@@ -10,7 +10,7 @@ const Solution: React.FC = () => {
         <AnimatedSection>
           <div className="tag">Our Solution</div>
           <h2 className="mb-6">
-            Introducing <span className="text-brand-blue">Smart Lens</span>{" "}
+            Introducing <span className="text-brand-blue">Smart Lens Insertion</span>{" "}
             Technology
           </h2>
         </AnimatedSection>
