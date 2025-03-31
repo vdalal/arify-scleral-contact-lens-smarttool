@@ -1,3 +1,4 @@
+
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { AlertCircle, Clock, Trash2 } from "lucide-react";
@@ -35,7 +36,7 @@ const Problem: React.FC = () => {
           <AnimatedSection delay="delay-200">
             <FeatureCard
               title="Time-Consuming"
-              description="Current insertion methods are inefficient, requiring multiple checks and re-insertions, wasting valuable time each day."
+              description="Current insertion methods are inefficient, requiring multiple checks and reinsertions, wasting valuable time each day."
               icon={Clock}
             />
           </AnimatedSection>
@@ -43,7 +44,21 @@ const Problem: React.FC = () => {
           <AnimatedSection delay="delay-300">
             <FeatureCard
               title="High Drop-Off Rate"
-              description="27% of new users abandon scleral lenses within the first year due to insertion difficulties and complications."
+              description={
+                <>
+                  27% of new users abandon scleral lenses within the first year due to insertion difficulties and complications.
+                  <sup className="ml-1">
+                    <a 
+                      href="https://pubmed.ncbi.nlm.nih.gov/31734087/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-brand-blue hover:underline"
+                    >
+                      1
+                    </a>
+                  </sup>
+                </>
+              }
               icon={Trash2}
             />
           </AnimatedSection>
