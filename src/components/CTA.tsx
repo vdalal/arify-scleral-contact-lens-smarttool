@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -198,6 +199,22 @@ const CTA: React.FC = () => {
             <div>
               <h3 className="text-xl font-medium mb-2">Follow Us</h3>
               <div className="flex justify-center space-x-4 mt-2">
+                <a
+                  href="https://discord.gg/kHfVVMqh6K"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue hover:bg-brand-blue hover:text-white transition-all"
+                >
+                  <span className="sr-only">Discord</span>
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.39-.444.998-.608 1.435a19.97 19.97 0 0 0-5.989 0c-.164-.437-.397-1.044-.609-1.435a.077.077 0 0 0-.079-.036c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055c1.94 1.473 3.832 2.373 5.684 2.975a.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.105c-.614-.229-1.198-.504-1.765-.815a.077.077 0 0 1-.008-.128c.118-.088.237-.181.351-.276a.074.074 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.114.095.233.188.351.275a.077.077 0 0 1-.006.129c-.567.311-1.152.585-1.766.815a.076.076 0 0 0-.041.105c.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028c1.859-.601 3.751-1.501 5.693-2.975a.08.08 0 0 0 .03-.055c.5-5.094-.838-9.52-3.549-13.442a.062.062 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                  </svg>
+                </a>
                 <a
                   href="#"
                   className="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue hover:bg-brand-blue hover:text-white transition-all"
