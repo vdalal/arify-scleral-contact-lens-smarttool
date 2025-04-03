@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           {/* Text content */}
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
             <AnimatedSection>
-              <div className="tag">Introducing Smart Lens Technology</div>
+              <div className="tag">Introducing Smart Lens Insertion Technology</div>
               <h1 className="mb-6">
                 Safer, Faster
                 <br />
