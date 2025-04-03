@@ -50,7 +50,7 @@ const Benefits: React.FC = () => {
 
           <AnimatedSection delay="delay-200">
             <FeatureCard
-              title="Performance Monitoring"
+              title="Enhanced Experience"
               description="Track insertion success rates and improvement over time with detailed analytics."
               icon={Gauge}
             />
