@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -215,7 +216,9 @@ const CTA: React.FC = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://linkedin.com/company/arify-eyecare"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue hover:bg-brand-blue hover:text-white transition-all"
                 >
                   <span className="sr-only">LinkedIn</span>
