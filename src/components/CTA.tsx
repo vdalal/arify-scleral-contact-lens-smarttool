@@ -172,7 +172,7 @@ const CTA: React.FC = () => {
               </div>
               
               <p className="text-sm text-brand-gray">
-                Our iOS app is currently under review with the Apple App Store and will be available soon.
+                Our iOS app is coming soon.
               </p>
             </div>
           </div>
