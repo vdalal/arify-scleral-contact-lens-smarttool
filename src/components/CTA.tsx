@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -153,8 +152,7 @@ const CTA: React.FC = () => {
                 Get the Arify Mobile App
               </h3>
               <p className="text-brand-gray mb-6">
-                Take your scleral lens experience to the next level with our companion mobile app. 
-                Track your insertions, get personalized tips, and connect with our community.
+                Ease lens insertions, ML-based head and eye tracking, and more.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
