@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -157,7 +158,7 @@ const CTA: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
                 <a 
-                  href="https://play.google.com/store/apps/details?id=app.lovable.arify" 
+                  href="https://play.google.com/store/apps/details?id=app.arify" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-full hover:bg-brand-blue/90 transition-all"
