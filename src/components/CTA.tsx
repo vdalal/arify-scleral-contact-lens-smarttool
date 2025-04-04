@@ -152,7 +152,7 @@ const CTA: React.FC = () => {
                 Get the Arify Mobile App
               </h3>
               <p className="text-brand-gray mb-6">
-                Ease lens insertions, ML-based head and eye tracking, and more.
+                Take your scleral lens experience to the next level with our free mobile app. Ease lens insertions, get ML-assisted face and eye tracking, and more.
               </p>
               
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
