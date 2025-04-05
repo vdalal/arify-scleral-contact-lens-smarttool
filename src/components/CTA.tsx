@@ -87,7 +87,7 @@ const CTA: React.FC = () => {
                 Insertion?
               </h2>
               <p className="text-lg text-brand-gray mb-8 max-w-2xl mx-auto">
-                Join thousands of users who have transformed their scleral lens
+                Join other users who have transformed their scleral lens
                 experience with our smart technology. Get started today and see
                 the difference.
               </p>
