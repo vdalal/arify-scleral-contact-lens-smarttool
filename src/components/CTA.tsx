@@ -206,7 +206,7 @@ const CTA: React.FC = () => {
             <div>
               <h3 className="text-xl font-medium mb-2">Contact Us</h3>
               <p className="text-brand-gray">
-                <a href="mailto:support@arify.net" className="hover:text-brand-blue transition-colors">
+                <a href="mailto:support@arify.net" className="text-brand-blue hover:text-brand-blue/80 transition-colors">
                   support@arify.net
                 </a>
               </p>
