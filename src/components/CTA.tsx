@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -205,7 +206,9 @@ const CTA: React.FC = () => {
             <div>
               <h3 className="text-xl font-medium mb-2">Contact Us</h3>
               <p className="text-brand-gray">
-                support@arify.net
+                <a href="mailto:support@arify.net" className="hover:text-brand-blue transition-colors">
+                  support@arify.net
+                </a>
               </p>
             </div>
             <div>
