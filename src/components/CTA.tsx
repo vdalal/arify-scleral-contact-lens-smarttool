@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
@@ -161,34 +160,13 @@ const CTA: React.FC = () => {
                   href="https://play.google.com/store/apps/details?id=app.arify" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-full hover:bg-brand-blue/90 transition-all"
+                  className="inline-flex items-center justify-center"
                 >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-white"
-                  >
-                    <path
-                      d="M4.52 2.92L13.82 12.2L4.5 21.5C4.33 21.34 4.18 21.16 4.06 20.94C3.95 20.73 3.87 20.5 3.82 20.24V3.74C3.87 3.5 3.95 3.27 4.06 3.06C4.18 2.84 4.33 2.66 4.52 2.92Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M14.76 13.14L16.96 15.34L5.92 22C5.71 21.95 5.5 21.87 5.3 21.76C5.11 21.64 4.92 21.5 4.76 21.34L14.76 13.14Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M14.76 11.26L4.52 2.92C4.69 2.76 4.88 2.61 5.07 2.5C5.27 2.38 5.48 2.31 5.69 2.26L16.96 9.06L14.76 11.26Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M21.64 12.2C21.81 12.59 21.9 13.01 21.9 13.46C21.9 13.9 21.81 14.33 21.64 14.72L19.05 16.12L16.96 15.34L16.72 15.1L19.48 12.2L19.05 11.89L16.71 9.31L16.95 9.07L19.05 8.28L21.64 12.2Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  Download for Android
+                  <img 
+                    src="/public/lovable-uploads/2d3b379e-a633-4bad-8faa-bec4e02abf35.png" 
+                    alt="Get it on Google Play" 
+                    className="h-14"
+                  />
                 </a>
                 <Button variant="outline" disabled className="opacity-70">
                   <svg
