@@ -66,15 +66,15 @@ const Hero: React.FC = () => {
             </AnimatedSection>
           </div>
 
-          {/* Hero image - replaced with device image */}
+          {/* Hero image - replaced with device image on black background */}
           <AnimatedSection
             className="w-full lg:w-1/2 relative"
             animation="blur-in"
             delay="delay-200"
           >
-            <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center">
+            <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-black">
               <img 
-                src="/lovable-uploads/e8aff4e3-cc78-4d8f-a397-681e5888b589.png" 
+                src="/lovable-uploads/9e943f1f-2435-4891-b8e6-e9eadb5ae79d.png" 
                 alt="Arify Scleral Lens Insertion Device" 
                 className="w-full max-w-sm mx-auto animate-floating"
               />
