@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
             animation="blur-in"
             delay="delay-200"
           >
-            <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-black">
+            <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-gray-200">
               <img 
                 src="/lovable-uploads/8f1a7f7e-28c6-40b3-a19b-a10bfa21f201.png" 
                 alt="Arify Scleral Lens Insertion Device" 
