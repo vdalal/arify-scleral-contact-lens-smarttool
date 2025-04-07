@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
             </AnimatedSection>
           </div>
 
-          {/* Hero image - updated with new device image */}
+          {/* Hero image - updated with new circular device image */}
           <AnimatedSection
             className="w-full lg:w-1/2 relative"
             animation="blur-in"
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
           >
             <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-black">
               <img 
-                src="/lovable-uploads/73753871-e359-4e29-87df-5ee91ecf3920.png" 
+                src="/lovable-uploads/8f1a7f7e-28c6-40b3-a19b-a10bfa21f201.png" 
                 alt="Arify Scleral Lens Insertion Device" 
                 className="w-full max-w-sm mx-auto animate-floating"
               />
