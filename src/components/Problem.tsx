@@ -83,9 +83,9 @@ const Problem: React.FC = () => {
                 </div>
                 <ul className="text-brand-gray space-y-2 pl-5 list-disc">
                   <li>Ensure lens immersed in solution</li>
-                  <li>Check for dirt/debris on fingers</li>
-                  <li>Check for dirt/debris on lens</li>
-                  <li>Check for dirt/debris in eye</li>
+                  <li>Check for debris on fingers</li>
+                  <li>Check for debris on lens</li>
+                  <li>Check for debris in eye</li>
                   <li>Insert lens</li>
                 </ul>
               </div>
@@ -95,7 +95,7 @@ const Problem: React.FC = () => {
                 </div>
                 <ul className="text-brand-gray space-y-2 pl-5 list-disc">
                   <li>Check lens placement</li>
-                  <li>Pan eye left/right or up/down to check for placement and/or dirt/debris</li>
+                  <li>Pan eye left/right or up/down to check for placement and/or debris</li>
                   <li>Reinsert (as appropriate)</li>
                 </ul>
               </div>
