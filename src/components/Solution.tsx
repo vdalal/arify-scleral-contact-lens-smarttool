@@ -29,8 +29,8 @@ const Solution: React.FC = () => {
             <div className="glass-card overflow-hidden rounded-3xl relative">
               <AspectRatio ratio={1 / 1} className="bg-gradient-to-b from-white to-gray-50">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  {/* Green scanner light animation */}
-                  <div className="absolute w-full h-16 bg-gradient-to-b from-green-400/0 via-green-400/30 to-green-400/0 
+                  {/* Subtle green scanner light animation */}
+                  <div className="absolute w-full h-10 bg-gradient-to-b from-green-400/0 via-green-400/15 to-green-400/0 
                                 animate-[scan_3s_ease-in-out_infinite] z-10"></div>
                   
                   {/* Device image */}
@@ -42,10 +42,10 @@ const Solution: React.FC = () => {
                   
                   {/* Status indicator - animates between checking and success */}
                   <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center 
-                                  bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md z-30
-                                  border border-green-200">
-                    <span className="w-3 h-3 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-                    <span className="text-sm font-medium text-green-800">Lens Position Optimal</span>
+                                  bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm z-30
+                                  border border-green-100">
+                    <span className="w-2.5 h-2.5 rounded-full bg-green-400 mr-2 animate-pulse"></span>
+                    <span className="text-sm font-medium text-green-700">Lens Position Optimal</span>
                   </div>
                 </div>
               </AspectRatio>
