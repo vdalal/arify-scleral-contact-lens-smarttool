@@ -114,9 +114,14 @@ export default {
 					'0%': { opacity: '0', filter: 'blur(10px)' },
 					'100%': { opacity: '1', filter: 'blur(0)' }
 				},
-				floating: {
+				'floating': {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				'scan': {
+					'0%': { transform: 'translateY(-100%)' },
+					'50%': { transform: 'translateY(100%)' },
+					'100%': { transform: 'translateY(-100%)' }
 				}
 			},
 			animation: {
@@ -126,7 +131,8 @@ export default {
 				'fade-in-right': 'fade-in-right 0.7s ease-out forwards',
 				'fade-in-left': 'fade-in-left 0.7s ease-out forwards',
 				'blur-in': 'blur-in 0.7s ease-out forwards',
-				'floating': 'floating 3s ease-in-out infinite'
+				'floating': 'floating 3s ease-in-out infinite',
+				'scan': 'scan 3s ease-in-out infinite'
 			},
 			boxShadow: {
 				'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',

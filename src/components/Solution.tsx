@@ -2,6 +2,7 @@
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { Camera, Check, ShieldCheck, Timer } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Solution: React.FC = () => {
   return (
@@ -25,27 +26,29 @@ const Solution: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row items-center gap-12 mt-10">
           <AnimatedSection className="w-full lg:w-1/2" animation="fade-in-right">
-            <div className="glass-card aspect-square max-w-md mx-auto rounded-3xl overflow-hidden p-6">
-              <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center relative">
-                {/* This would be your product visualization */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4">
-                  <div className="absolute inset-0 bg-brand-blue/20 rounded-full blur-xl"></div>
-                  <div className="absolute inset-[10%] bg-white rounded-full border-4 border-brand-lightBlue/50"></div>
+            <div className="glass-card overflow-hidden rounded-3xl relative">
+              <AspectRatio ratio={1 / 1} className="bg-gradient-to-b from-white to-gray-50">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Green scanner light animation */}
+                  <div className="absolute w-full h-16 bg-gradient-to-b from-green-400/0 via-green-400/30 to-green-400/0 
+                                animate-[scan_3s_ease-in-out_infinite] z-10"></div>
                   
-                  {/* Camera visualization */}
-                  <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center">
-                    <Camera className="w-6 h-6 text-white" />
-                  </div>
+                  {/* Device image */}
+                  <img 
+                    src="/lovable-uploads/4b797262-f4bb-4cfb-a122-236aecc2a0f0.png" 
+                    alt="Arify Smart Lens Insertion Device"
+                    className="w-4/5 h-auto object-contain z-20 animate-floating"
+                  />
                   
-                  {/* Lens visualization */}
-                  <div className="absolute inset-[25%] border-4 border-dashed border-brand-blue/50 rounded-full"></div>
-                  
-                  {/* Detection visualization */}
-                  <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2 transform rotate-6 px-4 py-1 bg-green-100 rounded-md text-green-800 text-xs font-medium">
-                    <Check className="inline-block w-3 h-3 mr-1" /> Clear for insertion
+                  {/* Status indicator - animates between checking and success */}
+                  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center 
+                                  bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md z-30
+                                  border border-green-200">
+                    <span className="w-3 h-3 rounded-full bg-green-500 mr-2 animate-pulse"></span>
+                    <span className="text-sm font-medium text-green-800">Lens Position Optimal</span>
                   </div>
                 </div>
-              </div>
+              </AspectRatio>
             </div>
           </AnimatedSection>
 
