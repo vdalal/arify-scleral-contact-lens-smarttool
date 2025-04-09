@@ -29,10 +29,6 @@ const Solution: React.FC = () => {
             <div className="glass-card overflow-hidden rounded-3xl relative">
               <AspectRatio ratio={1 / 1} className="bg-gradient-to-b from-white to-gray-50">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  {/* Subtle green scanner light animation */}
-                  <div className="absolute w-full h-10 bg-gradient-to-b from-green-400/0 via-green-400/15 to-green-400/0 
-                                animate-[scan_3s_ease-in-out_infinite] z-10"></div>
-                  
                   {/* Device image */}
                   <img 
                     src="/lovable-uploads/4b797262-f4bb-4cfb-a122-236aecc2a0f0.png" 
