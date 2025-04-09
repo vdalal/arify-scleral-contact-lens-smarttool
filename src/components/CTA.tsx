@@ -150,7 +150,7 @@ const CTA: React.FC = () => {
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
                 <Smartphone className="text-brand-blue" />
-                Get the Arify Mobile App
+                Get the Arify Smart Mirror Mobile App
               </h3>
               <p className="text-brand-gray mb-6">
                 Take your scleral lens experience to the next level with our free mobile app. Ease lens insertions, get ML-assisted face and eye tracking, and more.
