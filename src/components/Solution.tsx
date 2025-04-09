@@ -29,11 +29,11 @@ const Solution: React.FC = () => {
             <div className="glass-card overflow-hidden rounded-3xl relative">
               <AspectRatio ratio={1 / 1} className="bg-gradient-to-b from-white to-gray-50">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  {/* Device image */}
+                  {/* Device image - removed animate-floating class */}
                   <img 
                     src="/lovable-uploads/4b797262-f4bb-4cfb-a122-236aecc2a0f0.png" 
                     alt="Arify Smart Lens Insertion Device"
-                    className="w-4/5 h-auto object-contain z-20 animate-floating"
+                    className="w-4/5 h-auto object-contain z-20"
                   />
                   
                   {/* Status indicator - animates between checking and success */}
