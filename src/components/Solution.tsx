@@ -26,14 +26,14 @@ const Solution: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row items-center gap-12 mt-10">
           <AnimatedSection className="w-full lg:w-1/2" animation="fade-in-right">
-            <div className="glass-card overflow-hidden rounded-3xl relative">
+            <div className="glass-card p-0 overflow-hidden rounded-3xl relative">
               <AspectRatio ratio={1 / 1} className="bg-gradient-to-b from-white to-gray-50">
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Device image - removed animate-floating class */}
                   <img 
                     src="/lovable-uploads/4b797262-f4bb-4cfb-a122-236aecc2a0f0.png" 
                     alt="Arify Smart Lens Insertion Device"
-                    className="w-4/5 h-auto object-contain z-20"
+                    className="w-full h-full object-cover z-20"
                   />
                   
                   {/* Status indicator - animates between checking and success */}

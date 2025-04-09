@@ -72,11 +72,11 @@ const Hero: React.FC = () => {
             animation="blur-in"
             delay="delay-200"
           >
-            <div className="glass-card p-6 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
+            <div className="glass-card p-0 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
               <img 
                 src="/lovable-uploads/8f1a7f7e-28c6-40b3-a19b-a10bfa21f201.png" 
                 alt="Arify Scleral Lens Insertion Device" 
-                className="w-full max-w-sm mx-auto"
+                className="w-full h-full object-cover"
               />
             </div>
           </AnimatedSection>
