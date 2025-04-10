@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
             <div className="glass-card p-0 w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
               <img 
                 src="/lovable-uploads/8f1a7f7e-28c6-40b3-a19b-a10bfa21f201.png" 
-                alt="Arify Scleral Lens Insertion Device" 
+                alt="Image shows the Arify Smart Scleral Lens insertion device. The device provides real-time guidance with green solid light and warnings in case of debris and bubbles on the lens thus providing a safer, and faster experience. The product is made of high-quality material and meant to be held on the finger for efficient on-the-go use." 
                 className="w-full h-full object-cover"
               />
             </div>
