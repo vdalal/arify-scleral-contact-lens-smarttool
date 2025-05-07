@@ -158,7 +158,7 @@ const CTA: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
                 <a 
-                  href="https://play.google.com/store/apps/details?id=app.arify" 
+                  href="https://play.google.com/store/apps/details?id=net.arify.EyeTracking" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center"
