@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Footer: React.FC = () => {
@@ -42,9 +43,9 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} arify.net. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-brand-gray hover:text-brand-blue transition-colors text-sm">
+            <Link to="/privacy-policy" className="text-brand-gray hover:text-brand-blue transition-colors text-sm">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="text-brand-gray hover:text-brand-blue transition-colors text-sm">
               Terms of Service
             </a>
