@@ -4,6 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 import { Smartphone, User, Mail, CheckCircle } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 const CTA: React.FC = () => {
   const { toast } = useToast();
@@ -135,9 +136,9 @@ const CTA: React.FC = () => {
                   Terms of Service
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-brand-blue underline">
+                <Link to="/privacy-policy" className="text-brand-blue underline">
                   Privacy Policy
-                </a>
+                </Link>
               </p>
             </div>
           </div>
