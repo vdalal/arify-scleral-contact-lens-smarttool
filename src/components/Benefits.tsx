@@ -1,4 +1,3 @@
-
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import FeatureCard from "./FeatureCard";
@@ -79,20 +78,19 @@ const Benefits: React.FC = () => {
               <div className="w-full md:w-2/3">
                 <h3 className="mb-4">Transforming the User Experience</h3>
                 <p className="text-brand-gray mb-6">
-                  Our users report a huge reduction in insertion-related discomfort and a 
-                  substantial increase in confidence when using scleral lenses.
+                  Our users report a huge improvement in insertion related discomfort, a substantial increase in efficiency, and overall lower infections.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-blue mb-2">Hugely</div>
+                    <div className="text-3xl font-bold text-brand-blue mb-2"></div>
                     <div className="text-sm text-brand-gray">Improved user satisfaction</div>
                   </div>
                   <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-blue mb-2">Bigly</div>
+                    <div className="text-3xl font-bold text-brand-blue mb-2"></div>
                     <div className="text-sm text-brand-gray">Reduction in insertion time</div>
                   </div>
                   <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
-                    <div className="text-3xl font-bold text-brand-blue mb-2">Vastly</div>
+                    <div className="text-3xl font-bold text-brand-blue mb-2"></div>
                     <div className="text-sm text-brand-gray">Fewer reinsertion attempts</div>
                   </div>
                 </div>
