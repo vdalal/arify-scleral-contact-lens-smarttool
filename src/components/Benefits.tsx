@@ -91,7 +91,7 @@ const Benefits: React.FC = () => {
                   </div>
                   <div className="flex-1 bg-white rounded-lg p-4 shadow-sm">
                     <div className="text-3xl font-bold text-brand-blue mb-2"></div>
-                    <div className="text-sm text-brand-gray">Fewer reinsertion attempts</div>
+                    <div className="text-sm text-brand-gray">Fewer bacterial infections</div>
                   </div>
                 </div>
               </div>
