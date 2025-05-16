@@ -79,6 +79,65 @@ const CTA: React.FC = () => {
   return (
     <section id="contact" className="section bg-brand-blue/5">
       <div className="max-w-5xl mx-auto">
+        {/* 1. Move Mobile App section ahead of form */}
+        <AnimatedSection delay="delay-200">
+          <div className="glass-card p-8 md:p-12 bg-white/70">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
+                <Smartphone className="text-brand-blue" />
+                {/* 2. Updated heading text */}
+                Get the complimentary Smart Mirror app
+              </h3>
+              <p className="text-brand-gray mb-6">
+                Take your scleral lens experience to the next level with our free mobile app. Ease lens insertions, get ML-assisted face and eye tracking, and more.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
+                <a 
+                  href="https://play.google.com/store/apps/details?id=net.arify.EyeTracking" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center"
+                >
+                  <img 
+                    src="/public/lovable-uploads/2d3b379e-a633-4bad-8faa-bec4e02abf35.png" 
+                    alt="Get it on Google Play" 
+                    className="h-14"
+                  />
+                </a>
+                <Button variant="outline" disabled className="opacity-70">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.85 2.8C16.92 1.64 18.43 1.76 18.43 1.76C18.43 1.76 18.73 3.19 17.67 4.28C16.56 5.41 15.38 5.09 15.38 5.09C15.38 5.09 15.03 3.77 15.85 2.8Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M15.85 13.67C16.91 13.67 18.85 11.67 18.85 9.09C18.85 6.91 16.56 6.51 16.56 6.51C16.56 6.51 14.52 6.52 14.52 8.53C14.52 10.66 14.77 13.67 15.85 13.67ZM9.89 22C11.01 22 11.77 21.15 13.02 21.15C14.3 21.15 14.84 21.98 16.04 21.98C17.21 21.98 18.18 20.68 19.1 19.41C20.14 17.96 20.58 16.54 20.61 16.44C20.61 16.41 20.55 16.41 20.48 16.41C19.4 16.41 18.36 17.37 17.92 17.37C17.45 17.37 17.02 16.74 16.14 16.74C15.22 16.74 14.69 17.4 13.69 17.4C12.69 17.4 12.19 16.78 11.29 16.78C10.33 16.78 9.39 17.67 8.44 19.17C7.78 20.22 7.44 21.57 7.44 22.83C7.44 22.87 7.47 22.93 7.5 22.93C7.6 22.93 8.73 22 9.89 22ZM18.3 13.12C18.3 13.05 18.23 13.02 18.17 13.02C18.1 13.02 17.89 13.12 17.66 13.12C17.13 13.12 16.69 12.38 16.19 11.51C15.73 10.68 15.19 9.63 15.19 8.8C15.19 8.28 15.29 8.11 15.49 7.89C15.69 7.66 16.13 7.47 16.44 7.47C16.47 7.47 16.5 7.44 16.5 7.41C16.5 7.24 15.69 5.9 15.09 5.9C14.88 5.9 14.78 5.97 14.65 6.07C14.52 6.17 14.32 6.31 14.05 6.31C13.85 6.31 13.69 6.21 13.52 6.14C13.36 6.04 13.16 5.97 12.92 5.97C11.69 5.97 10.93 7 10.53 7.94C10.33 8.42 10.13 9.09 10.13 9.96C10.13 11.72 11.09 13.67 12.05 13.67C12.39 13.67 12.59 13.57 12.79 13.47C12.99 13.37 13.19 13.27 13.49 13.27C13.79 13.27 13.95 13.37 14.15 13.47C14.39 13.57 14.62 13.67 14.95 13.67C15.58 13.67 16.16 13.12 16.89 11.95C17.36 11.15 17.57 10.42 17.7 9.93C17.7 9.89 17.66 9.89 17.63 9.89C17.5 9.89 16.79 10.15 16.56 10.15C16.19 10.15 15.93 9.82 15.59 9.45C15.29 9.12 14.92 8.73 14.92 8.04C14.92 7.31 15.26 6.91 15.83 6.91C15.9 6.91 15.93 6.88 15.93 6.84C15.93 6.74 15.83 6.48 15.83 6.17V6.14C15.83 5.97 15.9 5.9 16.1 5.9C16.26 5.9 16.53 5.97 16.69 5.97C16.89 5.97 16.96 5.9 16.96 5.8C16.96 5.53 16.56 5.05 16.16 4.75C15.93 4.58 15.66 4.45 15.39 4.48C15.36 4.48 15.36 4.45 15.36 4.41C15.36 4.35 15.46 4.28 15.49 4.25C15.89 3.88 16.62 3.57 17.23 3.57C18.9 3.57 19.8 4.55 19.8 6.27V11.41C19.8 11.58 19.83 11.89 19.83 12.09C19.83 12.59 19.63 13.09 19.13 13.09C18.9 13.09 18.6 13.02 18.3 13.12Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M3.38 22H5.9V17.03H8.27L11.91 22H15.03L10.88 16.4C12.35 15.77 13.3 14.35 13.3 12.33C13.3 9.21 11.24 7.6 7.57 7.6H3.38V22ZM5.9 15.02V9.61H7.45C9.61 9.61 10.71 10.53 10.71 12.33C10.71 14.13 9.62 15.02 7.45 15.02H5.9Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  iOS Coming Soon
+                </Button>
+              </div>
+              
+              <p className="text-sm text-brand-gray">
+                Our iOS app is coming soon.
+              </p>
+            </div>
+          </div>
+        </AnimatedSection>
+        {/* 2. Mobile App section is now above the form */}
+
         <AnimatedSection>
           <div className="glass-card p-8 md:p-12 bg-white/70">
             <div className="text-center">
@@ -86,9 +145,8 @@ const CTA: React.FC = () => {
                 Ready for a <span className="text-brand-blue">Safer</span>, Healthier Scleral Lens Experience?
               </h2>
               <p className="text-lg text-brand-gray mb-8 max-w-2xl mx-auto">
-                Join other users who have transformed their scleral lens
-                experience with our smart technology. Get started today and see
-                the difference.
+                {/* 3. Update form subtext */}
+                Sign up today to learn more.
               </p>
 
               <form 
@@ -139,62 +197,6 @@ const CTA: React.FC = () => {
                 <Link to="/privacy-policy" className="text-brand-blue underline">
                   Privacy Policy
                 </Link>
-              </p>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection delay="delay-200" className="mt-12">
-          <div className="glass-card p-8 md:p-12 bg-white/70">
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
-                <Smartphone className="text-brand-blue" />
-                Get the Arify Smart Mirror Mobile App
-              </h3>
-              <p className="text-brand-gray mb-6">
-                Take your scleral lens experience to the next level with our free mobile app. Ease lens insertions, get ML-assisted face and eye tracking, and more.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
-                <a 
-                  href="https://play.google.com/store/apps/details?id=net.arify.EyeTracking" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center"
-                >
-                  <img 
-                    src="/public/lovable-uploads/2d3b379e-a633-4bad-8faa-bec4e02abf35.png" 
-                    alt="Get it on Google Play" 
-                    className="h-14"
-                  />
-                </a>
-                <Button variant="outline" disabled className="opacity-70">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.85 2.8C16.92 1.64 18.43 1.76 18.43 1.76C18.43 1.76 18.73 3.19 17.67 4.28C16.56 5.41 15.38 5.09 15.38 5.09C15.38 5.09 15.03 3.77 15.85 2.8Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M15.85 13.67C16.91 13.67 18.85 11.67 18.85 9.09C18.85 6.91 16.56 6.51 16.56 6.51C16.56 6.51 14.52 6.52 14.52 8.53C14.52 10.66 14.77 13.67 15.85 13.67ZM9.89 22C11.01 22 11.77 21.15 13.02 21.15C14.3 21.15 14.84 21.98 16.04 21.98C17.21 21.98 18.18 20.68 19.1 19.41C20.14 17.96 20.58 16.54 20.61 16.44C20.61 16.41 20.55 16.41 20.48 16.41C19.4 16.41 18.36 17.37 17.92 17.37C17.45 17.37 17.02 16.74 16.14 16.74C15.22 16.74 14.69 17.4 13.69 17.4C12.69 17.4 12.19 16.78 11.29 16.78C10.33 16.78 9.39 17.67 8.44 19.17C7.78 20.22 7.44 21.57 7.44 22.83C7.44 22.87 7.47 22.93 7.5 22.93C7.6 22.93 8.73 22 9.89 22ZM18.3 13.12C18.3 13.05 18.23 13.02 18.17 13.02C18.1 13.02 17.89 13.12 17.66 13.12C17.13 13.12 16.69 12.38 16.19 11.51C15.73 10.68 15.19 9.63 15.19 8.8C15.19 8.28 15.29 8.11 15.49 7.89C15.69 7.66 16.13 7.47 16.44 7.47C16.47 7.47 16.5 7.44 16.5 7.41C16.5 7.24 15.69 5.9 15.09 5.9C14.88 5.9 14.78 5.97 14.65 6.07C14.52 6.17 14.32 6.31 14.05 6.31C13.85 6.31 13.69 6.21 13.52 6.14C13.36 6.04 13.16 5.97 12.92 5.97C11.69 5.97 10.93 7 10.53 7.94C10.33 8.42 10.13 9.09 10.13 9.96C10.13 11.72 11.09 13.67 12.05 13.67C12.39 13.67 12.59 13.57 12.79 13.47C12.99 13.37 13.19 13.27 13.49 13.27C13.79 13.27 13.95 13.37 14.15 13.47C14.39 13.57 14.62 13.67 14.95 13.67C15.58 13.67 16.16 13.12 16.89 11.95C17.36 11.15 17.57 10.42 17.7 9.93C17.7 9.89 17.66 9.89 17.63 9.89C17.5 9.89 16.79 10.15 16.56 10.15C16.19 10.15 15.93 9.82 15.59 9.45C15.29 9.12 14.92 8.73 14.92 8.04C14.92 7.31 15.26 6.91 15.83 6.91C15.9 6.91 15.93 6.88 15.93 6.84C15.93 6.74 15.83 6.48 15.83 6.17V6.14C15.83 5.97 15.9 5.9 16.1 5.9C16.26 5.9 16.53 5.97 16.69 5.97C16.89 5.97 16.96 5.9 16.96 5.8C16.96 5.53 16.56 5.05 16.16 4.75C15.93 4.58 15.66 4.45 15.39 4.48C15.36 4.48 15.36 4.45 15.36 4.41C15.36 4.35 15.46 4.28 15.49 4.25C15.89 3.88 16.62 3.57 17.23 3.57C18.9 3.57 19.8 4.55 19.8 6.27V11.41C19.8 11.58 19.83 11.89 19.83 12.09C19.83 12.59 19.63 13.09 19.13 13.09C18.9 13.09 18.6 13.02 18.3 13.12Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M3.38 22H5.9V17.03H8.27L11.91 22H15.03L10.88 16.4C12.35 15.77 13.3 14.35 13.3 12.33C13.3 9.21 11.24 7.6 7.57 7.6H3.38V22ZM5.9 15.02V9.61H7.45C9.61 9.61 10.71 10.53 10.71 12.33C10.71 14.13 9.62 15.02 7.45 15.02H5.9Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  iOS Coming Soon
-                </Button>
-              </div>
-              
-              <p className="text-sm text-brand-gray">
-                Our iOS app is coming soon.
               </p>
             </div>
           </div>
